@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var logo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        logo.layer.cornerRadius = 8.0
+        logo.clipsToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
